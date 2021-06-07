@@ -1,0 +1,225 @@
+      body{
+      background-image: linear-gradient( #FFFFFF, #51907E);
+    
+      margin: 0;
+      padding: 0;
+     }
+    /* {navbar css} */
+
+    li {
+      display: inline;
+    }
+    li {
+      float: right;
+    }
+
+    .navbar-brand {
+      margin-top: 6px;
+    }
+
+    li a {
+      display: block;
+      color: rgba(194, 255, 231, 0.829);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    a {
+      display: block;
+      padding: 8px;
+      float: left;
+      color: rgba(166, 248, 215, 0.973);
+      font-size: 20.2px;
+      font-family: Satisfy;
+    }
+
+    ul {
+      /* width: 100vw; */
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: linear-gradient(rgba(128, 128, 128, 0.747), lightblue);
+    }
+
+    li a:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+
+    .active {
+      background-color: rgba(173, 216, 230, 0.466);
+    }
+
+    /* {navbar css ends} */
+
+  /* {grid css starts} */
+.grid {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+
+  grid-template-areas: 
+    "header header"
+    "container container"
+    "main main2 ";
+
+  grid-gap: 10px;
+
+ 
+
+}
+
+
+    /* {grid css ends} */
+
+.container {
+  grid-area: container;
+
+  background-color: lightblue;
+
+  margin-bottom: 30px;
+  
+  margin-left: 150px;
+  margin-right: 200px;
+  
+  display: grid;
+  align-content: center;
+}
+
+p2 {
+  font-size: 28px;
+  font-family: Balsamiq;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.597);
+
+}
+    
+.header {
+  grid-area: header;
+}
+
+
+    /* {main css starts...} */
+
+     h2 {
+      font-family: Balsamiq;
+      margin-left: 10px;
+      color: rgba(0, 0, 0, 0.651);
+    }
+
+    .main {
+      grid-area: main;
+      background-color: lightblue;
+      height: 295px;
+      /* width: 330px; */
+      margin-left: 150px;
+      margin-top: 20px;
+      position: relative;
+      width: 55%;
+    
+    }
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+
+ height: 295px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main:hover .image {
+  opacity: 0.3;
+}
+
+.main:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+    p1 {
+      font-size: 10px;
+      font-family: Signika;
+    }
+
+    /* {main css ends...} */
+
+    /* {main2 css starts...} */
+
+    .main2 {
+      grid-area: main2;
+      background-color: lightblue;
+      height: 295px;
+      width: 330px;
+      margin-top: 20px;
+      margin-left: 105px;
+
+      display: grid;
+      
+      position: relative;
+      width: 55%;
+    }
+    
+.main2:hover .image {
+  opacity: 0.3;
+}
+
+.main2:hover .middle {
+  opacity: 1;
+}
+
+    /* {main2 css ends...} */
+
+    
+    /* {fonts for htmls starts} */
+
+    @font-face {
+      font-family: NatureSpiritRegular;
+      src: url(../fonts/NatureSpiritRegular.otf)
+    }
+
+    @font-face {
+      font-family: Signika;
+      src: url(../fonts/Signika-Regular.ttf)
+    }
+
+    @font-face {
+      font-family: Satisfy;
+      src: url(../fonts/Satisfy-Regular.ttf)
+    }
+
+    @font-face {
+      font-family: Balsamiq;
+      src: url(../fonts/BalsamiqSans-Regular.ttf)
+    }
+
+    .Signika {
+      font-family: Signika;
+    }
+
+  /* {fonts for htmls ends} */

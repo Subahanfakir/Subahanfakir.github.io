@@ -1,0 +1,226 @@
+    body{
+      background-image: linear-gradient( #FFFFFF, #51907E);
+    
+      margin: 0;
+      padding: 0;
+    }
+
+    /* {navbar css} */
+
+    li {
+      display: inline;
+    }
+    li {
+      float: right;
+    }
+
+    .navbar-brand {
+      margin-top: 6px;
+    }
+
+    li a {
+      display: block;
+      color: rgba(194, 255, 231, 0.829);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    a {
+      display: block;
+      padding: 8px;
+      float: left;
+      color: rgba(166, 248, 215, 0.973);
+      font-size: 20.2px;
+      font-family: Satisfy;
+    }
+
+
+    ul {
+      position: fixed;
+      width: 100vw;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: linear-gradient(rgba(128, 128, 128, 0.747), lightblue);
+    }
+
+    li a:hover {
+      background-color: rgba(255, 255, 255, 0.322);
+    }
+
+    .active {
+      background-color: rgba(173, 216, 230, 0.466);
+    }
+
+    /* {navbar css ends} */
+
+  /* {container 1 css starts} */
+
+    h1 {
+      font-family: NatureSpiritRegular;
+      
+      font-size: 43px;
+      margin-left: 20px;
+    
+    }
+
+    p {
+      font-family: Signika;
+      font-size: 20px;
+
+      margin-left: 20px;
+      margin-right: 11.3px;
+      margin-top: 10px;
+    }
+
+    #container1 {
+      background-color: rgba(194, 255, 231, 0.397);
+      opacity: 1.0;
+
+      height: 380px;
+      width: 735px; 
+      
+      margin-right: 170px;
+      margin-top: 129px;
+      
+      border-radius: 15px;
+
+    }
+
+    /* {container 1 css ends} */
+
+     /* {container 2 css starts} */
+
+    #container2 {
+      /* background-color: rgba(255, 255, 255, 0.24); */
+      float: right;
+      margin-top: 134px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-end;
+      
+    }
+
+    
+  img {
+    border-radius: 50%;
+    float: right;
+  
+    }
+
+    /* {container 2 css ends} */
+
+    /* {container 3 css starts} */
+
+    #container3 {
+      background-color: rgba(194, 255, 231, 0.397);
+      opacity: 1.0;
+
+      height: 530px;
+      width: 900px; 
+      
+      position: absolute;
+
+      margin-top: 560px;
+
+      border-radius: 15px;
+    }
+
+    #section1 {
+      height: 380px;
+      width: 850px; 
+    }
+
+    p3 {
+      font-family: Signika;
+      font-size: 15px;
+
+      margin-left: 10px;
+    }
+
+    p4 {
+      font-family: Signika;
+      font-size: 20px;
+
+      margin-left: 10px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin-left: 10px;
+      margin-top: 20px;
+      
+    }
+
+    h3 {
+      font-size: 17px;
+      font-family: Signika;
+      margin-left: 10px;
+    
+
+      color: rgba(42, 47, 51, 0.726);
+      }
+
+   /* {container 3 css ends} */
+
+
+  h4 {
+  font-size: 16px;
+  font-family: Signika;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  margin-right: 10px;
+
+  color: black
+  
+  }
+/*{grid css starts} */
+
+    #grid {
+      width: 95vw;
+      height: 178vh;
+      /* background-color: lightgray; */
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+/*{grid css starts} */
+
+/* {fonts for htmls starts} */
+
+    @font-face {
+      font-family: NatureSpiritRegular;
+      src: url(../fonts/NatureSpiritRegular.otf)
+    }
+
+    @font-face {
+      font-family: Signika;
+      src: url(../fonts/Signika-Regular.ttf)
+    }
+
+    @font-face {
+      font-family: Satisfy;
+      src: url(../fonts/Satisfy-Regular.ttf)
+    }
+
+    @font-face {
+      font-family: Balsamiq;
+      src: url(../fonts/BalsamiqSans-Regular.ttf)
+    }
+
+    .Signika {
+      font-family: Signika;
+    }
+
+/* {fonts for htmls ends} */
