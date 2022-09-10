@@ -1,253 +1,261 @@
-    body{
-      background-image: linear-gradient( #FFFFFF, #51907E);
-    
-      margin: 0;
-      padding: 0;
-     }
- /* {navbar css} */
+body{
+  background-image: linear-gradient( #FFFFFF, #51907E);
 
-    .header {
-      grid-area: header;
-    }
+  margin: 0;
+  padding: 0;
+ }
+/* {navbar css} */
 
-    li {
-      display: inline;
-    }
-    li {
-      float: right;
-    }
+.header {
+  grid-area: header;
+}
 
-    .navbar-brand {
-      margin-top: 6px;
-    }
+li {
+  display: inline;
+}
+li {
+  float: right;
+}
 
-    li a {
-      display: block;
-      color: rgba(194, 255, 231, 0.829);
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
+.navbar-brand {
+  margin-top: 6px;
+}
 
-    a {
-      display: block;
-      padding: 8px;
-      float: left;
-      color: rgba(166, 248, 215, 0.973);
-      font-size: 20.2px;
-      font-family: Satisfy;
-    }
+li a {
+  display: block;
+  color: rgba(194, 255, 231, 0.829);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-    ul {
-      position: fixed;
-      width: 100vw;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-image: linear-gradient(rgba(128, 128, 128, 0.747), lightblue);
-    }
+a {
+  display: block;
+  padding: 8px;
+  float: left;
+  color: rgba(166, 248, 215, 0.973);
+  font-size: 20.2px;
+  font-family: Satisfy;
+}
 
-    li a:hover {
-      background-color: rgba(255, 255, 255, 0.322);
-    }
+ul {
+  position: fixed;
+  width: 100vw;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(rgba(128, 128, 128, 0.747), lightblue);
+}
 
-    .active {
-      background-color: rgba(173, 216, 230, 0.466);
-    }
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.322);
+}
 
-    /* {navbar css ends} */
+.active {
+  background-color: rgba(173, 216, 230, 0.466);
+}
 
-     /* {grid css starts} */
+/* {navbar css ends} */
 
-    .grid {
-      height: 160vh;
-      width: 88.9vw;
+ /* {grid css starts} */
 
-      display: grid;
+.grid {
+  height: 160vh;
+  width: 88.9vw;
 
-      grid-template-columns: 1fr 1fr;
-      /* grid-template-rows: 1fr 1fr; */
+  display: grid;
 
-      grid-template-areas: 
-        "header header"
-        "main main2 "
-        "footer footer";
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
 
-      grid-gap: 10px;
+  grid-template-areas: 
+    "header header"
+    "main main2 "
+    "footer footer";
+
+  grid-gap: 10px;
 
 
-   
 
-    }
 
- /* {grid css ends} */
+}
+
+/* {grid css ends} */
 
 /* {main css starts...} */
 
-     h2 {
-      font-family: Balsamiq;
-      margin-left: 10px;
-      color: rgba(0, 0, 0, 0.651);
-    }
+ h2 {
+  font-family: Balsamiq;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.651);
+}
 
-    .main {
-      grid-area: main;
-      background-color: lightblue;
-      height: 350px;
-      width: 600px;
-      margin-left: 50px;
-      margin-top: 55px;
-    }
+.main {
+  grid-area: main;
+  background-color: lightblue;
+  height: 350px;
+  width: 600px;
+  margin-left: 50px;
+  margin-top: 55px;
+}
 
-    #icon1 {
-      color: rgb(95, 94, 94);
-      font-size: 50px;
-      margin-left: 20px;
-    }
+#icon11 {
+  color: rgb(95, 94, 94);
+  font-size: 50px;
+  margin-left: 20px;
+}
 
-    
-    #icon2 {
-      color: rgb(95, 94, 94);
-      font-size: 50px;
-      margin-left: 20px;
-    }
-
-    
-    #icon3 {
-      color: rgb(95, 94, 94);
-      font-size: 50px;
-      margin-left: 20px;
-    }
-
-    p1 {
-      font-size: 26px;
-      font-family: Signika;
-    }
-
-    /* {main css ends...} */
-
-    /* {main2 css starts...} */
-
-    .main2 {
-      grid-area: main2;
-      background-color: lightblue;
-      height: 350px;
-      width: 600px;
-      margin-top: 55px;
-      margin-left: 60px;
-    }
-
-     
-    #icon4 {
-      color: rgb(95, 94, 94);
-      font-size: 50px;
-      margin-left: 20px;
-      margin-top: 37px;
-    }
-
-    #icon5 {
-      color: rgb(95, 94, 94);
-      font-size: 50px;
-      margin-left: 27px;
-    }
+#icon1 {
+  color: rgb(95, 94, 94);
+  font-size: 50px;
+  margin-left: 20px;
+}
 
 
-    /* {main2 css ends...} */
+#icon2 {
+  color: rgb(95, 94, 94);
+  font-size: 50px;
+  margin-left: 20px;
+}
 
-    /* {footer css starts...} */
-    
-    .footer {
-      grid-area: footer;
 
-      background-color: lightblue;
+#icon3 {
+  color: rgb(95, 94, 94);
+  font-size: 50px;
+  margin-left: 20px;
+}
 
-      height: 400px;
-      width: 760px;
+p1 {
+  font-size: 26px;
+  font-family: Signika;
+}
 
-      margin-left: 270px;
-    }
+/* {main css ends...} */
 
-    
-    #icon6 {
-      color: rgb(95, 94, 94);
-      font-size: 25px;
-      margin-left: 20px;
-    }
+/* {main2 css starts...} */
 
-    
-    #icon7 {
-      color: rgb(95, 94, 94);
-      font-size: 25px;
-      margin-left: 20px;
-      margin-top: 27px;
-    }
+.main2 {
+  grid-area: main2;
+  background-color: lightblue;
+  height: 350px;
+  width: 600px;
+  margin-top: 55px;
+  margin-left: 60px;
+}
 
-    
-    #icon8 {
-      color: rgb(95, 94, 94);
-      font-size: 25px;
-      margin-left: 20px;
-      margin-top: 27px;
-    }
+ 
+#icon4 {
+  color: rgb(95, 94, 94);
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 37px;
+}
 
-    
-    #icon9 {
-      color: rgb(95, 94, 94);
-      font-size: 25px;
-      margin-left: 20px;
-      margin-top: 27px;
-    }
+#icon5 {
+  color: rgb(95, 94, 94);
+  font-size: 50px;
+  margin-left: 27px;
+}
 
-    
-    #icon10 {
-      color: rgb(95, 94, 94);
-      font-size: 25px;
-      margin-left: 20px;
-      margin-top: 27px;
-    }
 
-    p4 {
-      font-family: Signika;
-      margin-left: 5px;
-    }
+/* {main2 css ends...} */
 
-    /* {footer css ends...} */
-    
-      
-    @media screen and (min-width: 736px) {
-      .grid {
-      display: grid; 
-      grid-template-columns: 1fr 1fr; 
-      /* grid-template-rows: 1fr 1fr 1fr; */
-      grid-template-areas: "header header" "main main2" "footer footer";
-    }
+/* {footer css starts...} */
+
+.footer {
+  grid-area: footer;
+
+  background-color: lightblue;
+
+  height: 400px;
+  width: 760px;
+
+  margin-left: 270px;
+}
+
+
+#icon6 {
+  color: rgb(95, 94, 94);
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+
+#icon7 {
+  color: rgb(95, 94, 94);
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+
+#icon8 {
+  color: rgb(95, 94, 94);
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+
+#icon9 {
+  color: rgb(95, 94, 94);
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+
+#icon10 {
+  color: rgb(95, 94, 94);
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: 27px;
+}
+
+
+p4 {
+  font-family: Signika;
+  margin-left: 5px;
+}
+
+/* {footer css ends...} */
+
+  
+@media screen and (min-width: 736px) {
+  .grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas: "header header" "main main2" "footer footer";
+  }
+}
 
 
 /* {fonts for htmls starts} */
 
-    @font-face {
-      font-family: NatureSpiritRegular;
-      src: url(../fonts/NatureSpiritRegular.otf)
-    }
+@font-face {
+  font-family: NatureSpiritRegular;
+  src: url(../fonts/NatureSpiritRegular.otf)
+}
 
-    @font-face {
-      font-family: Signika;
-      src: url(../fonts/Signika-Regular.ttf)
-    }
+@font-face {
+  font-family: Signika;
+  src: url(../fonts/Signika-Regular.ttf)
+}
 
-    @font-face {
-      font-family: Satisfy;
-      src: url(../fonts/Satisfy-Regular.ttf)
-    }
+@font-face {
+  font-family: Satisfy;
+  src: url(../fonts/Satisfy-Regular.ttf)
+}
 
-    @font-face {
-      font-family: Balsamiq;
-      src: url(../fonts/BalsamiqSans-Regular.ttf)
-    }
+@font-face {
+  font-family: Balsamiq;
+  src: url(../fonts/BalsamiqSans-Regular.ttf)
+}
 
-    .Signika {
-      font-family: Signika;
-    }
+.Signika {
+  font-family: Signika;
+}
 
 /* {fonts for htmls ends} */
