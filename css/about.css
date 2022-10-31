@@ -8,7 +8,7 @@
     /* {navbar css} */
 
     li {
-      display: inline;
+      display: inline-flex;
     }
     li {
       float: right;
@@ -19,7 +19,7 @@
     }
 
     li a {
-      display: block;
+      display: inline-flex;
       color: rgba(194, 255, 231, 0.829);
       text-align: center;
       padding: 14px 16px;
@@ -27,7 +27,7 @@
     }
     
     a {
-      display: block;
+      display: inline-flex;
       padding: 8px;
       float: left;
       color: rgba(166, 248, 215, 0.973);
@@ -97,7 +97,7 @@
       /* background-color: rgba(255, 255, 255, 0.24); */
       float: right;
       margin-top: 134px;
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-end;
@@ -172,7 +172,7 @@
   font-size: 16px;
   font-family: Signika;
 
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
@@ -189,7 +189,7 @@
       height: 178vh;
       /* background-color: lightgray; */
 
-      display: flex;
+      display: inline-flex;
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
