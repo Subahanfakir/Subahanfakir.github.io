@@ -1,8 +1,37 @@
-    body{
-      background-image: url('photo/20190831_181828_HDR.JPG');
-      margin: 0;
-      padding: 0;
-      }
+/* @keyframes bgcolor {
+  0% {
+      background-color: lightblue
+  }
+
+  30% {
+      background-color: lightgreen
+  }
+
+  60% {
+      background-color: lightcoral
+  }
+
+  90% {
+      background-color: lightgoldenrodyellow
+  }
+
+  100% {
+      background-color: lightgrey
+  }
+}
+
+body {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+} */
+      
+body{
+  background-image: url('photo/20190831_181828_HDR.JPG');
+  margin: 0;
+  padding: 0;
+}
 
     /* {navbar css} */
 
@@ -108,7 +137,7 @@
     }
 
     #section1 {
-      background-color: rgba(194, 255, 231, 0.397);
+      background-color: lightblue;
 
       height: 380px;
       width: 735px; 
@@ -165,8 +194,7 @@
     }
 
   /* {fonts for htmls ends} */
-
-
+    
     /* {extra color if needed css start} */
     .facebook {
       color:#3b5998; 
