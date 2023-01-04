@@ -31,6 +31,7 @@ body{
   background-image: url('photo/20190831_181828_HDR.JPG');
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
     /* {navbar css} */
@@ -44,6 +45,7 @@ body{
 
     .navbar-brand {
       margin-top: 6px;
+      position: relative;
     }
 
     li a {
@@ -52,6 +54,7 @@ body{
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      position: relative;
     }
 
     a {
@@ -70,6 +73,7 @@ body{
       padding: 0;
       overflow: hidden;
       background-image: linear-gradient(rgba(128, 128, 128, 0.747), lightblue);
+      position: relative;
     }
 
     li a:hover {
@@ -94,6 +98,7 @@ body{
 
     .black {
       color: rgba(0, 0, 0, 0.795);
+      text-decoration: none;
     }
 
     /* {socailmedia icons css ends} */
@@ -121,6 +126,8 @@ body{
       margin-left: 20px;
       margin-bottom: 10px;
       color: rgba(0, 0, 0, 0.815);
+      position: relative;
+      
     }
 
     h2 {
@@ -131,9 +138,10 @@ body{
       margin-left: 20px;
       margin-bottom: 60px;
 
-      flex-direction: column;
-      justify-content: left;
+      /* flex-direction: column; */
+      /* justify-content: left; */
       align-items: flex-start;
+      position: relative;
     }
 
     #section1 {
