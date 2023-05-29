@@ -1,8 +1,8 @@
       body{
       background-image: linear-gradient( #FFFFFF, #51907E);
     
-      margin: 0;
-      padding: 0;
+      margin: auto;
+      padding: auto;
      }
     /* {navbar css} */
 
@@ -55,38 +55,31 @@
 
   /* {grid css starts} */
 .grid {
-  height: auto;
-  width: auto;
-
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr 1fr; */
-
-  grid-template-areas: 
-    "header header"
-    "container container"
-    "main main2 ";
-
-  grid-gap: 10px;
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "container container"
+      "main main2"
+      "main main3";
+    grid-gap: 10px;
+  }
 
  
-
-}
-
 
     /* {grid css ends} */
 
 .container {
   grid-area: container;
-
+  height: auto;
+  width: 800px;;
   background-color: lightblue;
-
+  margin-top: 30px;
   margin-bottom: 30px;
-  
-  margin-left: 150px;
-  margin-right: 200px;
-  
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   align-content: center;
 }
@@ -194,6 +187,33 @@ p2 {
 }
 
     /* {main2 css ends...} */
+
+    /* {main 3 css starts} */
+
+
+    .main3 {
+      grid-area: main3;
+      background-color: lightblue;
+      height: 295px;
+      width: 330px;
+      margin-top: 20px;
+      margin-left: 105px;
+
+      display: grid;
+      
+      position:relative;
+      width: 55%;
+    }
+    
+.main3:hover .image {
+  opacity: 0.3;
+}
+
+.main3:hover .middle {
+  opacity: 1;
+}
+
+  /* {main 3 css ends} */
 
     
     /* {fonts for htmls starts} */
