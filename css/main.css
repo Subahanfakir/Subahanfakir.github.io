@@ -406,20 +406,7 @@ h1,h2,h3,h4,h5
     justify-content: center;
 }
 
-#about .custom-paragraph1 {
-    font-size: 20px;
-    margin-bottom: 5%;
-}
 
-#about .custom-paragraph2 {
-    font-size: 20px;
-    margin-bottom: 8%;
-}
-
-#about .heading {
-    margin-bottom: 10%;
-}
-    
 
 #about h4
     {
@@ -454,10 +441,76 @@ h1,h2,h3,h4,h5
         float: right;
     }
 
-#about .row2 {
-    margin-top: 60px;
+
+
+
+/* Default styles for mobile first */
+#about .custom-paragraph1, #about .custom-paragraph2 {
+    font-size: 20px; /* Smaller font size for mobile devices */
+    margin-left: 5%;
 }
 
+#about .heading {
+    font-size: 30px; /* Default heading size for mobile */
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+/* Media query for tablets and desktops */
+@media (min-width: 768px) {
+    #about .custom-paragraph1 {
+        font-size: 20px; /* Larger font size for desktops */
+        margin-bottom: 5%;
+    }
+
+    #about .custom-paragraph2 {
+        font-size: 20px; /* Consistent with paragraph1 or you can customize it */
+        margin-bottom: 8%;
+    }
+
+    #about .heading {
+        font-size: 32px; /* Larger heading size for desktops */
+        margin-bottom: 10%;
+    }
+}
+
+/* Optionally, add another breakpoint for larger desktops */
+@media (min-width: 1024px) {
+    #about .custom-paragraph1 {
+        font-size: 24px; /* Even larger font size for large desktops */
+    }
+
+    #about .custom-paragraph2 {
+        font-size: 24px;
+    }
+
+    #about .heading {
+        font-size: 40px;
+    }
+}
+
+#about img {
+    display: block; /* Ensures the image is centered */
+    margin: 0 auto; /* Center align the image */
+    margin-top: 50px;
+    width: 100%; /* Makes the image responsive */
+    max-width: 300px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 40px; /* Rounded corners */
+}
+
+/* Media queries for finer control at different resolutions */
+@media (max-width: 768px) { /* Tablets and smaller devices */
+    #about img {
+        max-width: 200px; /* Smaller image on smaller devices */
+    }
+}
+
+@media (max-width: 576px) { /* Small devices (landscape phones, 576px and up) */
+    #about img {
+        max-width: 250px; /* Even smaller image for small devices */
+    }
+}
 
 /* end about */
 
