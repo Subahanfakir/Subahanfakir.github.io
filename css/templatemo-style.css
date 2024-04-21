@@ -273,7 +273,7 @@ h1,h2,h3,h4,h5
   }
 
   
-#clock-container {
+/* #clock-container {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -318,7 +318,7 @@ h1,h2,h3,h4,h5
     color: #000;
     text-align: center;
     line-height: 200px;
-}
+} */
 
 
 
@@ -355,9 +355,13 @@ h1,h2,h3,h4,h5
         animation-direction: alternate;
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 160px;
-        padding-bottom: 215px;
+        padding-top: 18vh; /* Adjust as needed */
+        padding-bottom: 20vh; /* Adjust as needed */
         text-align: center;
+        min-height: 100vh; /* Ensure the content fills the entire viewport height */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 	}
 #home h1
     {
@@ -394,6 +398,14 @@ h1,h2,h3,h4,h5
 /* end home */
 
 /* start about */
+#about{
+    text-align: left;
+    min-height: 100vh; /* Ensure the content fills the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #about h4
     {
         padding: 15px 0;
