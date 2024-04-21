@@ -835,6 +835,8 @@
             }
 
         }
+        
+
 
         /**
          * recursive function to loop up the parent nodes to check if one of them exists in options.normalScrollElements
@@ -1995,20 +1997,20 @@
         * Gets the pageX and pageY properties depending on the browser.
         * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
         */
-        function getEventsPage(e){
+         function getEventsPage(e) {
             var events = [];
-
-            events.y = (typeof e.pageY !== 'undefined' && (e.pageY || e.pageX) ? e.pageY : e.touches[0].pageY);
-            events.x = (typeof e.pageX !== 'undefined' && (e.pageY || e.pageX) ? e.pageX : e.touches[0].pageX);
-
+          
+            events.y = (typeof e.pageY !== 'undefined' && (e.pageY || e.pageX) ? e.pageY : (e.touches && e.touches.length > 0 ? e.touches[0].pageY : undefined));
+            events.x = (typeof e.pageX !== 'undefined' && (e.pageY || e.pageX) ? e.pageX : (e.touches && e.touches.length > 0 ? e.touches[0].pageX : undefined));
+          
             //in touch devices with scrollBar:true, e.pageY is detected, but we have to deal with touch events. #1008
-            if(isTouch && isReallyTouch(e)){
-                events.y = e.touches[0].pageY;
-                events.x = e.touches[0].pageX;
+            if (isTouch && isReallyTouch(e)) {
+              events.y = e.touches[0].pageY;
+              events.x = e.touches[0].pageX;
             }
-
+          
             return events;
-        }
+          }
 
         function silentLandscapeScroll(activeSlide){
             FP.setScrollingSpeed (0, 'internal');
