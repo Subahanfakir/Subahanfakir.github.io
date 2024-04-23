@@ -355,7 +355,8 @@ h1,h2,h3,h4,h5
         flex-direction: column;
         justify-content: center;
 	}
-#home h1
+
+/* #home h1
     {
         border-radius: 25px;
         border: 2px solid white;
@@ -364,7 +365,33 @@ h1,h2,h3,h4,h5
         letter-spacing: 6px;
         padding: 25px 35px;
         margin: 30px 0;
+    } */
+
+#home h1 {
+    border-radius: 28px; /* Make it a perfect circle */
+    border: 2px solid white;
+    color: white;
+    display: inline-block;
+    letter-spacing: 4px;
+    padding: 3.5vw; /* Use viewport width to scale padding with the screen size */
+    margin: 30px 0;
+    max-width: 80vw; /* Max width to maintain the shape on smaller screens */
+    font-size: 4vw; /* Responsive font size */
+    text-align: center; /* Center the text inside the circle */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.75); /* White glow */
+
+}
+
+/* Media Query for smaller devices */
+@media (max-width: 600px) {
+    #home h1 {
+        font-size: 9.5vw; /* Increase font size for very small devices */
+        padding: 6vw; /* Increase padding to maintain aspect ratio */
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.75); /* White glow */
+
     }
+}
+
 #home h2
     {
         padding-bottom: 10px;
@@ -438,14 +465,49 @@ h1,h2,h3,h4,h5
 
 /* Default styles for mobile first */
 #about .custom-paragraph1, #about .custom-paragraph2 {
-    font-size: 20px; /* Smaller font size for mobile devices */
+    font-size: 18px; /* Smaller font size for mobile devices */
     margin-left: 5%;
 }
 
 #about .heading {
-    font-size: 30px; /* Default heading size for mobile */
+    font-size: 28px; /* Default heading size for mobile */
     margin-bottom: 10%;
     margin-left: 5%;
+}
+
+
+/* <!--code for button --> */
+#about .btn {
+    background: #191c29;
+    width: auto;
+    padding: 15px 30px;
+    margin-left: 5%;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 100%); /* Make text always visible */
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 0 0 10px 0 #5ddcff inset; /* Initial glow */
+}
+  
+  #about .btn:hover {
+    color: lightblue;
+  }
+/* code ending for button    */
+
+/* Center align the button on mobile devices */
+@media (max-width: 767px) {
+    .btn {
+        display: block; /* Make the button a block element */
+        margin-top: 50px;
+        width: 40%;
+        margin: 20px auto; /* Center align the button */
+    }
 }
 
 /* Media query for tablets and desktops */
@@ -469,11 +531,11 @@ h1,h2,h3,h4,h5
 /* Optionally, add another breakpoint for larger desktops */
 @media (min-width: 1024px) {
     #about .custom-paragraph1 {
-        font-size: 24px; /* Even larger font size for large desktops */
+        font-size: 23px; /* Even larger font size for large desktops */
     }
 
     #about .custom-paragraph2 {
-        font-size: 24px;
+        font-size: 23px;
     }
 
     #about .heading {
