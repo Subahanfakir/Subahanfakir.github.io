@@ -312,39 +312,9 @@ h1,h2,h3,h4,h5
     line-height: 200px;
 } */
 
-
-
-
-
-@keyframes bgcolor {
-    0% {
-        background-color: lightblue
-    }
-
-    30% {
-        background-color: #66bf39
-    }
-
-    60% {
-        background-color: #eb670f
-    }
-
-    90% {
-        background-color: #f35
-    }
-
-    100% {
-        background-color: #864cbf
-    }
-}
-
 #home
 	{
-        /* background: black; */
-        -webkit-animation: bgcolor 20s infinite;
-        animation: bgcolor 10s infinite;
-        -webkit-animation-direction: alternate;
-        animation-direction: alternate;
+        background: linear-gradient(to bottom, rgb(149, 198, 214),  #86c268);
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 18vh; /* Adjust as needed */
