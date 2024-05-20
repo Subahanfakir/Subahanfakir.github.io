@@ -518,9 +518,9 @@ h1,h2,h3,h4,h5
     margin: 0 auto; /* Center align the image */
     margin-top: 50px;
     width: 100%; /* Makes the image responsive */
-    max-width: 300px; /* Maximum width */
+    max-width: 250px; /* Maximum width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 40px; /* Rounded corners */
+    border-radius: 50px; /* Rounded corners */
 }
 
 /* Media queries for finer control at different resolutions */
