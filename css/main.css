@@ -13,9 +13,6 @@ body
 #home .fp-slide,
 #home .fp-tableCell,
 
-/* #work,
-#work .fp-slide,
-#work .fp-tableCell, */
 
 #about,
 #about .fp-slide,
@@ -24,6 +21,10 @@ body
 #education,
 #education .fp-slide,
 #education .fp-tableCell,
+
+#work,
+#work .fp-slide,
+#work .fp-tableCell,
 
 #skills,
 #skills .fp-slide,
@@ -664,49 +665,117 @@ h1,h2,h3,h4,h5
     } */
 /* end skills */
 
-/* start work
-#work
-    {
-        background: #1a1a1a;
-    }
-#work h2
-    {
-        text-align: center;
-    }
+/* start work */
+#work {
+    background: black;
+    color: white;
+    padding: 40px 0;
+}
+#work h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
 
-#work .media
-    {
-      margin-top: 30px;
+#work h3 {
+    text-align: center;
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+#work h4 {
+    text-align: center;
+    margin-top: 8px;
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+#work .media {
+    margin-top: 30px;
+}
+
+#work .media .fa {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #D43F52;
+    font-size: 24px;
+    margin-right: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+#work .media .fa:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+#work .media .media-heading {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* Ensure images are bigger, centered, and have a light background with glow */
+#work .work-item {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#work .work-item .img-container {
+    width: auto; /* Use percentage for responsiveness */
+    max-width: 300px; /* Maximum width to ensure it's not too large */
+    max-height: 300px; /* Maximum width to ensure it's not too large */
+    height: auto; /* Height will adjust based on image aspect ratio */
+    background: white; /* Light background */
+    padding: 20px; /* Padding around the image */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect */
+    margin-bottom: 20px; /* Space between image and text */
+}
+
+#work .img-container img {
+    width: 100%; /* Make images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Ensure the images don't exceed this height */
+    border-radius: 15px;
+}
+
+/* Center text and adjust for responsiveness */
+@media (max-width: 767px) {
+    #work .work-item {
+        margin-bottom: 20px;
     }
-	
-#work .media .fa
-    {
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        color: #D43F52;
-        font-size: 24px;
-        margin-right: 24px;
-        width: 60px;
-        height: 60px;
-        line-height: 55px;
-        text-align: center;
-        vertical-align: middle;
-        transition: all 0.4s ease-in;
+    #work .work-item .img-container {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 250px; /* Adjust max width for smaller screens */
     }
-#work .media .fa:hover
-    {
-        background: #ffffff;
-        cursor: pointer;
+    #work h2 {
+        font-size: 6vw; /* Increase font size for smaller screens */
     }
-#work .media .media-heading
-    {
-        font-weight: 600;
-        font-size: 20px;
-        padding-bottom: 10px;
-    } */
+    #work h3 {
+        font-size: 4.5vw; /* Increase font size for smaller screens */
+    }
+    #work h4 {
+        font-size: 3.5vw; /* Increase font size for smaller screens */
+    }
+}
 /* end work */
 
-/* Start portfolio */
+
+
+
+
+/* Start portfolio
 #portfolio {
     background: #1a1a1a;
     text-align: center;
