@@ -673,7 +673,7 @@ h1,h2,h3,h4,h5
 #work h2 {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 85px;
     color: #ffffff;
 }
 
@@ -688,6 +688,7 @@ h1,h2,h3,h4,h5
     margin-top: 8px;
     color: #ffffff;
     font-weight: lighter;
+    margin-bottom: 10px;
 }
 
 #work .media {
@@ -766,6 +767,7 @@ h1,h2,h3,h4,h5
     }
     #work h4 {
         font-size: 3.5vw; /* Increase font size for smaller screens */
+        margin-bottom: 20px;
     }
 }
 /* end work */
