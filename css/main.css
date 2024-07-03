@@ -25,17 +25,17 @@ body
 #work .fp-slide,
 #work .fp-tableCell,
 
-#skills,
+/* #skills,
 #skills .fp-slide,
-#skills .fp-tableCell,
+#skills .fp-tableCell, */
+
+/* #portfolio,
+#portfolio .fp-slide,
+#portfolio .fp-tableCell, */
 
 #contact,
 #contact .fp-slide,
 #contact .fp-tableCell,
-
-#portfolio,
-#portfolio .fp-slide,
-#portfolio .fp-tableCell,
 
 footer,
 footer .fp-slide,
